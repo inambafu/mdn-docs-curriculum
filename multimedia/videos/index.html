@@ -24,13 +24,27 @@
 			<a href="./media/vid.mkv" target="__blank" rel="noopener noreferrer"> Link to the video</a> instead/
 		</p>
 	-->
-		<video controls>
-			<source src="./media/vid.mkv" type="video/mkv" />
-			<source src="./media/vid.mp4" type="video/mp4" />
-			<p>
+	<!-- support for multiple source formats-->
+	<video controls>
+		<source src="./media/vid.mkv" type="video/mkv" />
+		<source src="./media/vid.mp4" type="video/mp4" />
+		<p>
 				Your browser does&rsquo;t support this video. Here is a
 				<a href="./media/vid.mp4"> Link to the video</a> instead.
-			</p>
-		</video>
+		</p>
+	</video>
+<!-- other attributes for the video element -->
+	<video controls width="400" height="400" autoplay loop muted preload="auto" poster="./images/dp.jpeg">
+		<source src="./media/vid.mkv" type="video/mkv" />
+		<source src="./media/vid.mp4" type="video/mp4" />
+		<p>
+				Your browser does&rsquo;t support this video. Here is a
+				<a href="./media/vid.mp4"> Link to the video</a> instead.
+		</p>
+	</video>
+
+
+
+
 	</body>	
 </html>

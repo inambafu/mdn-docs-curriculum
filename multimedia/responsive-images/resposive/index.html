@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Responsive images</title>
+
+		<meta name="author" content="BUYINGA ISAAC NAMBAFU" />
+		<link rel="stylesheet" href="./styles/styles.css">
+	</head>
+	<body>
+		<header>
+		</header>
+		<main>
+			<section>
+				<h1>My website</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget venenatis ligula. Ut lacinia at dolor vitae pulvinar. Aliquam pretium dignissim eros. Integer faucibus, dui non aliquet bibendum, lectus orci lobortis odio, ornare porttitor est tellus eget velit. Nulla eros elit, malesuada id neque vel, viverra vehicula neque. Nullam auctor turpis non leo iaculis finibus. Quisque blandit arcu venenatis libero tempor, ac pulvinar ligula dapibus.</p>
+				
+				<!-- How to render responsive images -->
+
+				<picture>
+					<source media="(max-width: 799px)" srcset="../images/elva-480w-close-portratit.jpg">
+					<source media="(min-width: 800px)" srcset="../images/elva-800w.jpg">
+					<img src="../images/elva-800w.jpg" alt="Chris standing up holding his daughter Elva"
+				</picture>
+				<p>uspendisse potenti. Ut in luctus eros. Mauris pulvinar vehicula aliquet. Etiam imperdiet eleifend luctus. Duis ut justo nec eros ornare consectetur. Vestibulum convallis condimentum varius. Maecenas rutrum porta varius. Phasellus volutpat sem id sagittis luctus. Morbi vitae quam vitae nisi iaculis dignissim.</p>
+				<img srcset="../images/elva-fairy-480w.jpg 480w, ../images/elva-fairy-800w"
+				     sizes="(max-width: 600px) 480px, 800px"
+				     src="../images/elva-fairy-800.jpg" alt="Elva dressed as a fairy" />
+				<p>Header image originally by <a href="https://www.flickr.com/photos/miwok/17086751527">Miwok</a></p>
+			</section>
+		</main>
+	</body>
+</html>
